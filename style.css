@@ -68,7 +68,7 @@
   font-size: 26px;
 }
 
-.flex-row {
+.categorie {
   display: flex;
   padding-left: 19px;
   padding-right: 19px;
@@ -87,7 +87,7 @@
   box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   padding: 13px 9px 8px;
-  border: 5px solid #32B72F;
+  border: 5px solid #fff;
   position:relative;
   
 }
@@ -133,12 +133,8 @@ ion-icon {
   bottom: 8px;
   right: 10px;
   font-size: 20px;
-  opacity: 1;
+  opacity:0;
   color:#32B72F;
-}
-
-.selected {
-  border: 5px solid #fff;
 }
 
 .drinks {
@@ -150,7 +146,7 @@ ion-icon {
   bottom: 9px;
   right: 10px;
   font-size: 20px;
-  opacity: 1;
+  opacity: 0;
   color:#32B72F;
 }
 
@@ -163,7 +159,46 @@ ion-icon {
   bottom: 3px;
   right: 10px;
   font-size: 20px;
-  opacity: 1;
+  opacity: 0;
+  color:#32B72F;
+}
+
+.selected1 {
+  border: 5px solid #32B72F;
+}
+
+.selected1 > ion-icon {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  font-size: 20px;
+  opacity:1;
+  color:#32B72F;
+}
+
+.selected2 {
+  border: 5px solid #32B72F;
+}
+
+.selected2 > ion-icon {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  font-size: 20px;
+  opacity:1;
+  color:#32B72F;
+}
+
+.selected3 {
+  border: 5px solid #32B72F;
+}
+
+.selected3 > ion-icon {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  font-size: 20px;
+  opacity:1;
   color:#32B72F;
 }
 
@@ -198,4 +233,23 @@ ion-icon {
   font-weight: 400;
   font-size: 20px;
   color: #ffffff;
+}
+
+.order-made {
+  padding: 15px 25px 16px;
+  height: 61px;
+  background-color: #32B72F;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-made p {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+color: #fff;
 }

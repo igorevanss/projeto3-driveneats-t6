@@ -23,8 +23,8 @@
           <h2>Primeiro, seu prato</h2>
         </div>
 
-        <div class="flex-row">
-          <div class="items selected">
+        <div class="categorie">
+          <div class="items" onclick="selectedFood(this)">
             <div class="imgs">
               <img
                 src="./images/alex-munsell-Yr4n8O_3UPc-unsplash.jpg"
@@ -41,7 +41,7 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected">
+          <div class="items" onclick="selectedFood(this)">
             <div class="imgs">
               <img
                 src="./images/alex-munsell-Yr4n8O_3UPc-unsplash.jpg"
@@ -58,7 +58,7 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected">
+          <div class="items" onclick="selectedFood(this)">
             <div class="imgs">
               <img
                 src="./images/alex-munsell-Yr4n8O_3UPc-unsplash.jpg"
@@ -78,8 +78,8 @@
 
         <div class="categorie-name"><h2>Agora, sua bebida</h2></div>
 
-        <div class="flex-row">
-          <div class="items selected drinks">
+        <div class="categorie">
+          <div class="items drinks" onclick="selectedDrink(this)">
             <div class="imgs">
               <img src="./images/latadecoca.jpg" alt="" />
             </div>
@@ -92,7 +92,7 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected drinks">
+          <div class="items drinks" onclick="selectedDrink(this)">
             <div class="imgs">
               <img src="./images/latadecoca.jpg" alt="" />
             </div>
@@ -105,7 +105,7 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected drinks">
+          <div class="items drinks" onclick="selectedDrink(this)">
             <div class="imgs">
               <img src="./images/latadecoca.jpg" alt="" />
             </div>
@@ -121,8 +121,8 @@
 
         <div class="categorie-name"><h2>Por fim, sua sobremesa</h2></div>
 
-        <div class="flex-row">
-          <div class="items selected dessert">
+        <div class="categorie">
+          <div class="items dessert" onclick="selectedDessert(this)">
             <div class="imgs">
               <img src="./images/pudim.jpg" alt="" />
             </div>
@@ -135,7 +135,7 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected dessert">
+          <div class="items dessert" onclick="selectedDessert(this)">
             <div class="imgs">
               <img src="./images/pudim.jpg" alt="" />
             </div>
@@ -148,7 +148,10 @@
             <ion-icon name="checkmark-circle"></ion-icon>
           </div>
 
-          <div class="items selected dessert margin-bottom">
+          <div
+            class="items dessert margin-bottom"
+            onclick="selectedDessert(this)"
+          >
             <div class="imgs">
               <img src="./images/pudim.jpg" alt="" />
             </div>
@@ -163,7 +166,7 @@
         </div>
 
         <div class="footer">
-          <div class="arrounded">
+          <div class="arrounded" onclick="allSelected()">
             <p>Selecione os 3 itens</p>
             <p>para fechar o pedido</p>
           </div>
