@@ -276,9 +276,17 @@ box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 border-radius: 9px;
 position: fixed;
 
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-margin-bottom: 150px;
-display: none;
+
+margin-top: 255px;
+}
+
+.order-confirmation-items{
+display: flex;
+flex-direction: column;
 }
 
 .order-confirmation-title {
@@ -303,7 +311,7 @@ padding: 28px 33px 27px;
 .order-confirmation-text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 24px 26px;
 }
 
 .order-confirmation-text p {
@@ -312,4 +320,36 @@ padding: 28px 33px 27px;
   font-weight: 400;
   font-size: 22px;
   color: #FFFFFF;
+}
+
+.last-class p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.complete-order {
+  width: 329px;
+height: 52px;
+background-color: #fff;
+border-radius: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cancel-order {
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cancel-order p {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+color: #fff;
 }
