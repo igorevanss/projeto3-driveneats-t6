@@ -6,6 +6,7 @@
 
 .container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +29,7 @@
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .margin-top {
@@ -78,16 +80,19 @@
   background-color: transparent;
 }
 
-.categories {
+.items {
   width: 172px;
   height: 216px;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
-  padding: 18px 14px 13px;
+  padding: 13px 9px 8px;
+  border: 5px solid #32B72F;
+  position:relative;
+  
 }
 
-.categories img {
+.items img {
   width: 144px;
   height: 87px;
   border-radius: 4px;
@@ -114,7 +119,7 @@
   color: rgba(166, 166, 166, 0.8);
 }
 
-.img-texts h4 {
+.img-texts p:last-of-type {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -123,12 +128,43 @@
   margin-top: 7%;
 }
 
+ion-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 1;
+  color:#32B72F;
+}
+
+.selected {
+  border: 5px solid #fff;
+}
+
 .drinks {
   height: 202px;
 }
 
+.drinks ion-icon {
+  position: absolute;
+  bottom: 9px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 1;
+  color:#32B72F;
+}
+
 .dessert {
   height: 197px;
+}
+
+.dessert ion-icon {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  font-size: 20px;
+  opacity: 1;
+  color:#32B72F;
 }
 
 .margin-bottom {
