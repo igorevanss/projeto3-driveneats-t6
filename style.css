@@ -235,6 +235,10 @@ ion-icon {
   color: #ffffff;
 }
 
+.arrounded p:last-child {
+  display: none;
+}
+
 .order-made {
   padding: 15px 25px 16px;
   height: 61px;
@@ -246,10 +250,27 @@ ion-icon {
   align-items: center;
 }
 
-.order-made p {
-  font-family: 'Roboto';
+.order-made p:first-child {
+  display: none;
+}
+
+.order-made p:nth-child(2) {
+  display: none;
+}
+
+.order-made p:last-child {
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
 color: #fff;
+display: inline;
+}
+
+.order-confirmation {
+width: 377px;
+height: 353px;
+background: #50D074;
+box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
 }
