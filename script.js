@@ -2,6 +2,7 @@
 let drivenEats
 let drivenDrinks
 let drivenDessert
+let orderedFood
 
 function selectedFood(clickedFood) {
   drivenEats = document.querySelector('.selected1')
@@ -40,7 +41,7 @@ function allSelected() {
     drivenDrinks !== undefined &&
     drivenDessert !== undefined
   ) {
-    const orderedFood = document.querySelector('.arrounded')
+    orderedFood = document.querySelector('.arrounded')
     orderedFood.classList.add('order-made')
   }
 }
